@@ -12,9 +12,9 @@ namespace Uzduotis18_Testai
         public void IvestiInfo()
         {
             string expectedName = "Vardenis Pavardenis"; 
-            string expectedEmail = "vardpavard@one.lt";
-            string expectedCurrentAdress = "Kietaviškių km. 7, Elektrėnų sav.";
-            string expectedPermanentAdress = "Šviesos g. 32-7, Elektrėnai";
+            string expectedEmail = "pavard@one.lt";
+            string expectedCurrentAdress = "Kietaviškių";
+            string expectedPermanentAdress = "Elektrėnai";
 
             IWebDriver driver = new ChromeDriver ();
             driver.Url = "https://demoqa.com/text-box";
