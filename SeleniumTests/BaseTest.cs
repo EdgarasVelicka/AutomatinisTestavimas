@@ -11,10 +11,10 @@ namespace SeleniumTests
             Driver.InitializeDriver();
         }
 
-        [TearDown]
-        public void TearDown()
-        {
-            Driver.QuitDriver();
-        }
+        //[TearDown]
+        //public void TearDown()
+        //{
+        //    Driver.QuitDriver();
+        //}
     }
 }
