@@ -13,7 +13,6 @@ namespace SeleniumTests.Pages.MagellanTvTests
             string password = "Namai";
             string expectedErrorMessage = "Please enter a valid email address";
             
-
             MagellanTvLogin.Open();
             MagellanTvLogin.PushLoginButton();
             MagellanTvLogin.EnterEmail(email);

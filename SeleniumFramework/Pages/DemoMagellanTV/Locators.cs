@@ -11,10 +11,6 @@
             internal static string ErrorInvalidEmail = "//*[@id=\"__next\"]/div[2]/main/div/div/form/div[1]/p";
             internal static string CheckboxNotRobot = "//*[@id=\"recaptcha-anchor-label\"]";
             internal static string ErrorUserName = "//*[@id=\"__next\"]/div[2]/main/div/div/form/p[2]";
-
-
-
-
         }
     }
 }
