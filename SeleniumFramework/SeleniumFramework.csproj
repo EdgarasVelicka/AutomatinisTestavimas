@@ -55,8 +55,8 @@
   <ItemGroup>
     <Compile Include="Common.cs" />
     <Compile Include="Driver.cs" />
-    <Compile Include="Pages\DemoParadoxInteractive\Locators.cs" />
-    <Compile Include="Pages\DemoParadoxInteractive\ParadoxInteractive.cs" />
+    <Compile Include="Pages\DemoMagellanTV\Locators.cs" />
+    <Compile Include="Pages\DemoMagellanTV\MagellanTvLogin.cs" />
     <Compile Include="Pages\DemoQA\Locators.cs" />
     <Compile Include="Pages\DemoQA\TextBox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
