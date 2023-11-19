@@ -4,7 +4,7 @@
     {
         public static void Open()
         {
-            Driver.OpenPage("https://www.magellantv.com");
+            Common.OpenPage("https://www.magellantv.com");
         }
 
         public static void PushLoginButton()

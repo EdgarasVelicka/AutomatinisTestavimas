@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using SeleniumFramework;
 using SeleniumFramework.Pages.DemoMagellanTV;
 
 namespace SeleniumTests.Pages.MagellanTvTests

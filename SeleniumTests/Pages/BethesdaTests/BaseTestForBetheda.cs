@@ -1,15 +1,19 @@
-﻿using NUnit.Framework;
-using NUnit.Framework.Interfaces;
+﻿using NUnit.Framework.Interfaces;
+using NUnit.Framework;
 using SeleniumFramework;
+using SeleniumFramework.Pages.Bethesda;
 
-namespace SeleniumTests
+namespace SeleniumTests.Pages.BethesdaTests
 {
-    internal class BaseTest
+    internal class BaseTestForBetheda
     {
         [SetUp]
         public void SetUp()
         {
             Driver.InitializeDriver();
+            BethesdaHomePage.Open();
+            BethesdaHomePage.ClickChangeCookiePreferencesButton();
+            BethesdaHomePage.ClickConfirmCookieChoices();
         }
 
         [TearDown]

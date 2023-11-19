@@ -48,6 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseTest.cs" />
+    <Compile Include="Pages\BethesdaTests\BaseTestForBetheda.cs" />
+    <Compile Include="Pages\BethesdaTests\BethesdaHomePageTests.cs" />
+    <Compile Include="Pages\BethesdaTests\LoginSignUpFormTests.cs" />
     <Compile Include="Pages\MagellanTvTests\LoginTests.cs" />
     <Compile Include="Pages\DemoQA\TextBoxTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,7 +64,9 @@
       <Name>SeleniumFramework</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="RunSettings\info.runsettings" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
