@@ -55,6 +55,9 @@
   <ItemGroup>
     <Compile Include="Common.cs" />
     <Compile Include="Driver.cs" />
+    <Compile Include="Pages\Bethesda\BethesdaHomePage.cs" />
+    <Compile Include="Pages\Bethesda\Locators.cs" />
+    <Compile Include="Pages\Bethesda\LoginSignUpForm.cs" />
     <Compile Include="Pages\DemoMagellanTV\Locators.cs" />
     <Compile Include="Pages\DemoMagellanTV\MagellanTvLogin.cs" />
     <Compile Include="Pages\DemoQA\Locators.cs" />

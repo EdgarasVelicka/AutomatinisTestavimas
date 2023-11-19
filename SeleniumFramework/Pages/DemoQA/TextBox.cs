@@ -6,7 +6,7 @@ namespace SeleniumFramework.Pages.DemoQA
     {   
         public static void Open()
         {
-            Driver.OpenPage("https://demoqa.com/text-box");
+            Common.OpenPage("https://demoqa.com/text-box");
         }
 
         public static void EnterFullName(string fullName)

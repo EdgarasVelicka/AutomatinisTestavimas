@@ -3,7 +3,8 @@ using SeleniumFramework.Pages.DemoQA;
 
 namespace SeleniumTests.Pages
 {
-    internal class TextBoxTests : BaseTest
+    //[Parallelizable(scope: ParallelScope.All)]
+    internal class TextBoxTests : BaseTest 
     {
         [Test]
         public void TextBoxWithValidCredentials()

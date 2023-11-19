@@ -7,6 +7,11 @@ namespace SeleniumFramework
 {
     internal class Common
     {
+        internal static void OpenPage(string url)
+        {
+            Driver.driver.Value.Url = url;
+        }
+
         private static IWebElement GetElement(string locator)
         {
             return Driver.GetDriver().FindElement(By.XPath(locator));
@@ -19,6 +24,7 @@ namespace SeleniumFramework
 
         internal static void ClickElement(string locator)
         {
+            System.Threading.Thread.Sleep(2000);
             GetElement(locator).Click();
         }
 
@@ -29,11 +35,13 @@ namespace SeleniumFramework
 
         internal static void SendKeysToElement(string locator, string keys)
         {
+            System.Threading.Thread.Sleep(2000);
             GetElement(locator).SendKeys(keys);
         }
 
         internal static string GetElementText(string locator)
         {
+            System.Threading.Thread.Sleep(2000);
             return GetElement(locator).Text;
         }
 
@@ -45,6 +53,7 @@ namespace SeleniumFramework
 
         internal static string GetElementCssPropertyValue(string locator, string propertyName)
         {
+            System.Threading.Thread.Sleep(2000);
             IWebElement element = GetElement(locator);
             return element.GetCssValue(propertyName);
         }
@@ -83,6 +92,34 @@ namespace SeleniumFramework
             {
                 throw ex;
             }
+        }
+
+        internal static string GetCurrentWindowHandle()
+        {
+            return Driver.GetDriver().CurrentWindowHandle;
+        }
+
+        internal static List<string> GetWindowHandles()
+        {
+            return Driver.GetDriver().WindowHandles.ToList();
+        }
+
+        internal static void SwitchToWindowByHandle(string handle)
+        {
+            Driver.GetDriver().SwitchTo().Window(handle);
+        }
+
+        internal static void SwitchToNewWindowFromParentWindowByHandle(string parentWindowHandle)
+        {
+            List<string> handles = GetWindowHandles();
+            foreach (string handle in handles)
+            {
+                if (handle != parentWindowHandle)
+                {
+                     SwitchToWindowByHandle(handle);
+                     break;
+                }
+            }  
         }
     }
 }
